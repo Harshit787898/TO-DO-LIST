@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@500&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}
+.body{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(169, 192, 255);
+    color: white;
+    font-size: 30px;
+}
+
+.header{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 450px;
+    height:100px; 
+    color: white;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.list{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 450px;
+    width: 650px;
+    border: 1px solid;
+    background-color: rgb(169, 192, 255);
+    border-radius: 30px;
+    margin-top: 45px;
+    border: 5px solid white;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+input{
+    padding-left: 20px;
+    margin-top: 45px;
+    height: 50px;
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: cyan;
+    color: black;
+    font-size: 20px;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.butto{
+    margin-top: 50px;
+    height: 60px;
+    width: 135px;
+    border: 2px solid white;
+    background-color: cyan;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.work{
+    max-height: 200px;
+    width: 420px;
+    margin-top: 20px;
+    background-color: rgb(169, 192, 255);
+    color: black;
+    font-size: 20px;
+    overflow: scroll;
+    border-radius: 20px;
+}
+
+
+ul{
+    padding: 0%;
+    border: 2px solid white;
+    flex-direction: column;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    border-radius: 10px;
+    margin-left: 10px;
+    overflow-wrap: break-word;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+button{
+    height: 25px;
+    width: 30px;
+    border: 2px solid white;
+    background-color: cyan;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+span{
+    position: relative;
+    left: 375px;
+    height: 30px;
+	width: 20px;
+	font-size: 22px;
+	color: #555;
+	text-align: center;
+	border-radius: 50%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+span:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+input::placeholder{
+    color: rgb(31, 35, 6);
+    font-weight: 600;
+}
