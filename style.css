@@ -134,7 +134,7 @@ span{
 }
 
 span:hover{
-    cursor: pointer;
+   cursor: pointer;
     background-color: white;
     transform: rotate(90deg);
     transition: .3s;
