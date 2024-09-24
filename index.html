@@ -6,20 +6,23 @@
     <title>To-Do-List</title>
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io(1)/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io(1)/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io(1)/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io(1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io(1)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body class="body">
     <div class="header">
-    <h1>To Do List</h1>
+        <h1>To Do List</h1>
     </div>
-    <div name class="list">
-        <input  type="text" placeholder="Enter your work" id="input">
-        <button type="submit" onclick="add()" class="butto">Add Item</button>
-        <div class="work" id="cont">
+    <div class="list">
+        <input type="text" placeholder="Enter your work" id="input">
+        <div class="button-container">
+            <button type="submit" onclick="add()" class="butto">Add Item</button>
+            <button onclick="clearAll()" class="butto clear-btn">Clear All</button>
         </div>
-    </div>
+        <input type="text" placeholder="Search task" id="search">
+        <div class="work" id="cont"></div>
+    </div>    
     <script src="script.js"></script>
 </body>
 </html>
