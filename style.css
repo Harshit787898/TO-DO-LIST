@@ -1,150 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@500&display=swap');
-*{
+* {
     font-family: 'Montserrat', sans-serif;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.body{
-    flex-direction: column;
+
+body {
+    background-color: #f0f4f8;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-color: rgb(169, 192, 255);
-    color: white;
-    font-size: 30px;
-}
-
-.header{
-    margin-top: 25px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    border: 2px solid white;
-    border-radius: 25px;
-    width: 450px;
-    height:100px; 
-    color: white;
-    box-shadow:
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
 }
 
-.list{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    height: 450px;
-    width: 650px;
-    border: 1px solid;
-    background-color: rgb(169, 192, 255);
-    border-radius: 30px;
-    margin-top: 45px;
-    border: 5px solid white;
-    box-shadow:
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+.header {
+    text-align: center;
+    font-size: 2rem;
+    color: #4A4A4A;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-input{
-    padding-left: 20px;
-    margin-top: 45px;
-    height: 50px;
-    width: 450px;
-    border-radius: 10px;
-    border: 2px solid white;
-    background-color: cyan;
-    color: black;
-    font-size: 20px;
-    box-shadow:
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-
-.butto{
-    margin-top: 50px;
-    height: 60px;
-    width: 135px;
-    border: 2px solid white;
-    background-color: cyan;
-    border-radius: 10px;
-    font-size: 20px;
-    box-shadow:
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-
-.work{
-    max-height: 200px;
-    width: 420px;
-    margin-top: 20px;
-    background-color: rgb(169, 192, 255);
-    color: black;
-    font-size: 20px;
-    overflow: scroll;
-    border-radius: 20px;
-}
-
-
-ul{
-    padding: 0%;
-    border: 2px solid white;
-    flex-direction: column;
-    background-color: cyan;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    height: fit-content;
-    border-radius: 10px;
-    margin-left: 10px;
-    overflow-wrap: break-word;
-    box-shadow:
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-
-button{
-    height: 25px;
-    width: 30px;
-    border: 2px solid white;
-    background-color: cyan;
-    border-radius: 10px;
-    font-size: 20px;
-    box-shadow:
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-
-span{
-    position: relative;
-    left: 375px;
-    height: 30px;
-	width: 20px;
-	font-size: 22px;
-	color: #555;
-	text-align: center;
-	border-radius: 50%;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-span:hover{
-    cursor: pointer;
+.list {
     background-color: white;
-    transform: rotate(90deg);
-    transition: .3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-input::placeholder{
-    color: rgb(31, 35, 6);
-    font-weight: 600;
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+}
+
+.butto {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.butto:hover {
+    background-color: #0056b3;
+}
+
+.clear-btn {
+    background-color: #ff4d4d;
+}
+
+.clear-btn:hover {
+    background-color: #e60000;
+}
+
+.work {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+ol {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+    text-align: left;
+    list-style-type: none; /* Removes numbering */
+}
+
+ol li {
+    flex: 1;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+span {
+    background-color: #FF4D4D;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    display: inline-block;
+    position: relative;
+}
+
+span:hover {
+    background-color: white;
+    color: #FF4D4D;
+    transform: rotate(90deg);
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 50%;
+}
+
+span::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+span:hover::before {
+    opacity: 1;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* This ensures buttons are placed side by side with equal spacing */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.butto {
+    flex: 1; /* Allows buttons to take equal space */
+    margin: 0 5px; /* Adds small space between the buttons */
+}
+
+.clear-btn {
+    background-color: #ff4d4d;
+}
+
+.clear-btn:hover {
+    background-color: #e60000;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Styling for focused task */
+.focus-task {
+    border: 2px solid #28a745;
+    background-color: #dff0d8;
 }
